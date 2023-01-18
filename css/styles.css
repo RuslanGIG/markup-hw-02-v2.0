@@ -1,0 +1,341 @@
+:root {
+  --NAVY-BLUE: #2e2f42;
+  --IRIS: #4d5ae5;
+  --HOVER: #434455;
+  --white: #ffffff;
+}
+
+/* основной текст NAVY BLUE  color: #2E2F42*/
+/* заголовок секции герой color: #FFFFFF; */
+/* вторичный текст SLATE color: #434455; */
+/* текст футер логотипа CLOUD  IRIS color: #4D5AE5; color: #F4F4FD; */
+/* текст футер CORNFLOWER color: #E7E9FC; */
+/* твет акцент IRIS color: #4D5AE5; */
+/* цвет фона темный NAVY BLUE background: #2E2F42;*/
+/* цвет фона светлый background: #F4F4FD; */
+/* цвет фона белый background: #FFFFFF; */
+
+/* сброс стилей */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* end */
+
+/* глобальные */
+
+body {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--NAVY-BLUE);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* end */
+
+/* container */
+
+.container {
+  width: 1158px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* end */
+
+/* Хедер */
+
+.header {
+  padding: 24px 0;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--NAVY-BLUE);
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.logo:focus {
+  color: var(--IRIS);
+}
+
+.span-logo {
+  color: var(--IRIS);
+}
+
+.nav {
+  display: flex;
+}
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--NAVY-BLUE);
+}
+.menu-list:hover,
+.menu-list:focus {
+  color: var(--IRIS);
+}
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--HOVER);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--IRIS);
+}
+.flex-header {
+  display: flex;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 40px;
+}
+/* end */
+
+/* heto */
+
+.hero {
+  background-color: var(--NAVY-BLUE);
+  padding: 188px 0;
+  text-align: center;
+}
+
+.hero-title {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  margin-bottom: 48px;
+  /* width: 494px; */
+}
+
+.hero-btn {
+  background: #4d5ae5;
+  color: var(--white);
+  font-weight: 500;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
+/* end */
+
+/* about */
+
+.about {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item {
+  width: calc((100%-72) / 4);
+  margin-right: 24px;
+}
+
+.about-item:last-child {
+  margin-right: 0;
+}
+
+.about-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.about-text {
+  color: var(--HOVER);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* end */
+
+/* work */
+
+.work {
+  padding-bottom: 120px;
+}
+
+.work-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 72px;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-item {
+  width: calc((100%-48) / 3);
+  margin-right: 24px;
+}
+
+.work-item:last-child {
+  margin: 0;
+}
+
+/* end */
+
+/* team */
+
+.team-section {
+  padding: 120px 0;
+  background-color: #F4F4FD;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: var(--NAVY-BLUE);
+}
+
+.team-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+  width: calc((100%-72) / 4);
+  margin-right: 24px;
+}
+
+.team-item:last-child {
+  margin-right: 0;
+}
+
+.title-team {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--NAVY-BLUE);
+  margin-bottom: 8px;
+  margin-top: 32px;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--HOVER);
+  margin-bottom: 32px;
+}
+
+/* end */
+
+.footer {
+  background-color: var(--NAVY-BLUE);
+  padding: 100px 0;
+}
+
+.logo-footer {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+
+.footer-span-logo {
+  color: var(--IRIS);
+}
+
+.footer-text {
+  color:#E7E9FC ;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
+  margin-top: 16px;
+}
