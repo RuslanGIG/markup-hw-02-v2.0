@@ -27,10 +27,6 @@ p {
   margin-bottom: 0;
 }
 
-img {
-  display: block;
-}
-
 ul,
 ol {
   margin-top: 0;
@@ -44,6 +40,11 @@ ol {
 
 .list {
   list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /* end */
@@ -78,6 +79,7 @@ button {
 
 .header {
   padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -259,7 +261,7 @@ button {
 
 .team-section {
   padding: 120px 0;
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
 }
 
 .team-list {
@@ -277,8 +279,9 @@ button {
 }
 
 .team-item {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
   width: calc((100%-72) / 4);
   margin-right: 24px;
 }
@@ -330,7 +333,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-text {
-  color:#E7E9FC ;
+  color: #e7e9fc;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
@@ -339,3 +342,91 @@ border-radius: 0px 0px 4px 4px;
   width: 264px;
   margin-top: 16px;
 }
+
+/* portfolio */
+
+/* filrt */
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filtr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.filtr-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.filtr-btn {
+  background-color: #f4f4fd;
+  color: var(--IRIS);
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+}
+
+.filtr-btn:focus,
+.filtr-btn:hover {
+  color: var(--white);
+  font-weight: 500;
+  background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid #404bbf;
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+
+/* end */
+
+/* portfolio-list */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 24px;
+  row-gap: 48px; */
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  margin-right: 24px;
+  /* margin-bottom: 48px; */
+}
+
+.portfolio-item:nth-child(3n){
+  margin: 0;
+}
+
+.portfolio-item:nth-last-of-type(n+4){
+  margin-bottom: 48px;
+}
+
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--NAVY-BLUE);
+  margin-bottom: 8px;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--HOVER);
+}
+
+.portfolio-card {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: 0;
+}
+
+/* end */
+
+
