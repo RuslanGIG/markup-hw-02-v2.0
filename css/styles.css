@@ -399,11 +399,11 @@ button {
   /* margin-bottom: 48px; */
 }
 
-.portfolio-item:nth-child(3n){
+.portfolio-item:nth-child(3n) {
   margin: 0;
 }
 
-.portfolio-item:nth-last-of-type(n+4){
+.portfolio-item:nth-last-of-type(n + 4) {
   margin-bottom: 48px;
 }
 
@@ -428,5 +428,3 @@ button {
 }
 
 /* end */
-
-
